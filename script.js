@@ -1,16 +1,16 @@
-const leftWeight = document.querySelector("#left-weight");
-const rightWeight = document.querySelector("#right-weight");
-const blcBtn = document.querySelector("#sub-btn");
-const range = document.querySelector("#left-input");
-const resultField = document.querySelector(".result");
+const leftWeight = document.querySelector('#left-weight')
+const rightWeight = document.querySelector('#right-weight')
+const blcBtn = document.querySelector('#sub-btn')
+const range = document.querySelector('#left-input')
+const resultField = document.querySelector('.result')
 
 const UpdateWeightOne = () => {
-  let weightOne = leftWeight.value;
-  let weightTwo = rightWeight.value;
+  const weightOne = leftWeight.value
+  const weightTwo = rightWeight.value
   if (!weightOne || !weightTwo) {
-    return alert("Input all fields");
+    return window?.alert('Input all fields')
   }
-  let arr = range.value.trim().split(",");
+  const arr = range.value.trim().split(',')
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
@@ -18,18 +18,17 @@ const UpdateWeightOne = () => {
         parseInt(weightOne) + parseInt(arr[i]) ===
         parseInt(weightTwo) + parseInt(arr[j])
       ) {
-        console.log(arr[i]);
-        console.log(arr[j]);
+        console.log(arr[i])
+        console.log(arr[j])
         resultField.innerHTML = [arr[i], arr[j]]
-        return;
+        return
       } else {
-        resultField.innerHTML = "inbalanced scale"
+        resultField.innerHTML = 'inbalanced scale'
       }
     }
   }
-};
+}
 
-blcBtn.addEventListener("click", () => {
-  UpdateWeightOne();
-  return;
-});
+blcBtn.addEventListener('click', () => {
+  UpdateWeightOne()
+})
