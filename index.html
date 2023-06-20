@@ -7,7 +7,26 @@
     <title>Scale-Balancing</title>
   </head>
   <body>
-    
+    <div class="scale-container">
+      <h1>SCALE-BALANCING</h1>
+      <div class="scale">
+        <h4>Scale</h4>
+        <input type="number" id="left-weight" placeholder="left-weigth" />
+        <input type="number" id="right-weight" placeholder="right-weigth" />
+      </div>
+      <div class="weight-balance">
+        <h4>Input weight range here!</h4>
+        <input type="text" id="left-input" placeholder="right-weigth" />
+        <button type="button" id="sub-btn">Balance</button>
+      </div>
+      <div>
+        <h4>Sum of weight added to scale</h4>
+        <p
+          class="result"
+          style="background-color: black; color: #fff; padding: 0.2rem 3rem"
+        ></p>
+      </div>
+    </div>
     <script src="./script.js" type="module"></script>
   </body>
 </html>
