@@ -4,11 +4,7 @@ body {
 }
 
 .scale-container {
-  background: linear-gradient(
-    #00000073,
-    #bbb27e83,
-    #8ea52a8c
-  );
+  background: linear-gradient(#00000073, #bbb27e83, #8ea52a8c);
   display: flex;
   flex-direction: column;
   align-items: center;
