@@ -1,3 +1,4 @@
+
 const leftWeight = document.querySelector('#left-weight')
 const rightWeight = document.querySelector('#right-weight')
 const blcBtn = document.querySelector('#sub-btn')
